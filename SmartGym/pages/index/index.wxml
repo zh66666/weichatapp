@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{2000}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image bindtap="bindViewTap" src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class="flex-warp">
+  <view class='buttonviewclass'><button class='buttonclass' bindtap='getLatestInfo'> 近期通知 </button></view>
+  <view class='buttonviewclass'><button class='buttonclass' bindtap='getLatestActivity'> 最新活动 </button></view>
+  <view class='buttonviewclass'><button class='buttonclass' bindtap='joinActivity'> 项目报名 </button></view>  
+</view>
+<view class="flex-warp">
+  <view class='buttonviewclass'><button class='buttonclass' bindtap='joinVolunteer'> 志愿者报名 </button></view>
+  <view class='buttonviewclass'><button class='buttonclass' bindtap='checkHistory'> 已参加项目 </button></view>
+  <view class='buttonviewclass'><button class='buttonclass' bindtap='getFeedback'> 意见反馈 </button></view>
+</view>
+<view class="flex-warp">
+  <view class='buttonviewclass'><button class='buttonclass' bindtap='getHelp'> 疑难解答 </button></view>  
+  <view class='buttonviewclass'><button class='buttonclass' bindtap='share'> 转发分享 </button></view>
+  <view class='buttonviewclass'><button class='buttonclass' bindtap='administrator'> 管理员 </button></view>
+</view>

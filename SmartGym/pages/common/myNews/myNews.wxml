@@ -1,0 +1,3 @@
+<view class='pagetitle'> <text> 我的通知\n\n </text> </view>
+
+<view class='pagecontent'> <text> 暂无任何消息... </text> </view>

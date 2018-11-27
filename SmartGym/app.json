@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/myinfo/myinfo",
+    "pages/common/latestInfo/latestInfo",
+    "pages/common/latestActivity/latestActivity",
+    "pages/common/myNews/myNews",
+    "pages/common/feedback/feedback",
+    "pages/common/registration/registration",
+    "pages/common/sysIintroduction/sysIintroduction"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "智慧体育高校",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/main.png",
+        "selectedIconPath": "images/main_HL.png",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/myinfo/myinfo",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my_HL.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}

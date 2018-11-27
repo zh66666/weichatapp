@@ -1,0 +1,9 @@
+.pagetitle{
+  font-size: 40rpx;
+  text-align: center;
+}
+
+.pagecontent{
+  font-size: 30rpx;
+  text-align: left;
+}

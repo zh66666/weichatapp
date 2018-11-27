@@ -1,0 +1,16 @@
+<view class='pagetitle'> <text> 意见反馈\n </text> </view>
+<form catchsubmit="formSubmit" catchreset="formReset">
+  <view class="page-section">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+        <view class="weui-cell__bd">
+          <input class="weui-input" name="input" placeholder="请输入..." style="height: 3em"/>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="btn-area">
+    <button type="primary" formType="submit">Submit</button>
+    <button formType="reset">Reset</button>
+  </view>
+</form>

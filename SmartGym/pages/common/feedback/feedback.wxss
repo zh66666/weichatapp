@@ -1,0 +1,5 @@
+@import "../weui.wxss";
+.pagetitle{
+  font-size: 40rpx;
+  text-align: center;
+}

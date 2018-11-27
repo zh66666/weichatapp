@@ -1,0 +1,81 @@
+<view class='pagetitle'> <text> 同济智慧体育注册表\n\n </text> </view>
+
+<form bindsubmit="formSubmit">
+   <text class='one'>填写个人信息</text>
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+        <view class="weui-label">学号</view>
+    </view>
+    <view class="weui-cell__bd">
+        <input class="weui-input" name="no" placeholder="请输入学号" value=""/>
+    </view>
+</view>
+
+
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+        <view class="weui-label">姓名</view>
+    </view>
+    <view class="weui-cell__bd">
+        <input class="weui-input" name="name" placeholder="请输入姓名" value="{{userInfo.nickName}}"/>
+    </view>
+</view>
+
+<view class="weui-cell weui-cell_input">
+    <view class="page-section-title">性别</view>
+    <!-- <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text> -->
+    <view  class="radios">
+      <radio-group name="radio">
+        <label><radio value="radio1" checked='{{true}}'/>男</label>
+        <label><radio value="radio2"/>女</label>
+      </radio-group>
+    </view>
+</view>
+
+<view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">校区</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker bindchange="bindCampusPickerChange" value="{{indexcampus}}" range="{{campusArray}}">
+          <view class="weui-input">{{campusArray[indexcampus]}}</view>
+        </picker>
+      </view>
+    </view>
+  </view>
+
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">学院</view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{collegeArray}}">
+          <view class="weui-input">{{collegeArray[index]}}</view>
+        </picker>
+      </view>
+    </view>
+  </view>
+
+<view class='row'>
+  <view class='info'>
+    <input  class= 'info-input1' bindinput="handleInputPhone" placeholder="请输入你的手机号" />
+  </view>
+    <button class='button' bindtap='doGetCode' disabled='{{disabled}}' style="background-color:{{color}}" >{{text}}</button>
+ </view>
+
+  <view class='row'>
+        <view class='info'>
+               <input  class= 'info-input' bindinput="handleVerificationCode" placeholder="请输入你的验证码" />
+         </view>
+ 
+ </view>
+
+  <view class="button-sp-area">
+      <button class="weui-btn" type="primary" form-type='submit' plain="true">确定
+      </button>
+        <button class="weui-btn" type="primary"  bindtap='fanhui' plain="true">返回上一级
+      </button>
+ </view>
+ </form>
